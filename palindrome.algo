@@ -1,0 +1,26 @@
+ALGORITHME est_palindrome(mot: CHAINE DE CARACTÈRES) : BOOLÉEN
+    mot <- CONVERTIR_EN_MINUSCULES(mot)  // Convertir le mot en minuscules pour une comparaison insensible à la casse
+    mot <- SUPPRIMER_ESPACES(mot)  // Supprimer les espaces du mot
+    
+    debut <- 0
+    fin <- LONGUEUR(mot) - 1
+    
+    TANT_QUE debut <= fin FAIRE
+        SI mot[debut] != mot[fin] ALORS
+            RETOURNER FAUX
+        FIN SI
+        debut <- debut + 1
+        fin <- fin - 1
+    FIN TANT_QUE
+    
+    RETOURNER VRAI
+
+FONCTION CONVERTIR_EN_MINUSCULES(mot: CHAINE DE CARACTÈRES) : CHAINE DE CARACTÈRES
+    // Retourne une nouvelle chaîne de caractères avec toutes les lettres converties en minuscules
+    // Utilisez la méthode appropriée pour convertir en minuscules selon le langage de programmation utilisé
+FIN FONCTION
+
+FONCTION SUPPRIMER_ESPACES(mot: CHAINE DE CARACTÈRES) : CHAINE DE CARACTÈRES
+    // Retourne une nouvelle chaîne de caractères sans les espaces
+    // Utilisez la méthode appropriée pour supprimer les espaces selon le langage de programmation utilisé
+FIN FONCTION
